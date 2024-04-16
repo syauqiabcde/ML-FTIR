@@ -15,7 +15,7 @@ df = pd.DataFrame(df.iloc[:,:2].values,columns=col)
 
 def MEA_prediction(CO2):
     CO2 = np.array([CO2]).reshape(-1,1)
-    start = [952, 1328]
+    start = [952, 1028]
     interval = 5
     df3 = pd.DataFrame()
     for i in range(len(start)):
@@ -37,7 +37,7 @@ def MEA_prediction(CO2):
 
 def CO2_prediction(MEA):
     MEA = np.array([MEA]).reshape(-1,1)
-    start = [1489, 1561]
+    start = [1488, 1580]
     interval = 5
     df3 = pd.DataFrame()
     for i in range(len(start)):
